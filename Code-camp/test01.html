@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device--width, intial-scale=1.0 ">
+    <title>HTML form running</title>
+    <style
+}
+.main > * {
+outline: 1px dashed lime;
+/* flex-grow: ; */
+}
+.Facebook{
+    font-size: 75px;
+    font-family: 'Ruda', sans-serif;
+    color:   #1778F2;
+    font-weight: 700;
+    /* width: 100px; */
+    display: flex;
+    background-color: cadetblue;
+    text-align: center;
+    flex-flow: column;
+    justify-content: center;
+    padding: 10px;
+    
+
+    }
+.form{
+    display: flex;
+    background-color: coral;
+    justify-content: center;
+    flex-flow: column;
+
+}
+.intext{
+    font-size: 20px;
+    /* font-weight:900; */
+    color: black;
+    display: flex;
+    font-family:  'Ruda', sans-serif;
+    font-family: 'Trirong', serif;;
+    margin-left: 50px;
+    
+}
+.box{
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 3px 5px 2px silver;
+    display: block;
+    width: 250px;
+    text-align: center;
+
+}
+input[type=text]:focus {
+    border: 5px solid rgb(29, 191, 245);
+ 
+    
+}
+input{
+    width: 90%;
+    
+}
+.button {
+ background-color: #1778F2; 
+ border: none;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 10px;
+ border-radius: 10px;
+ width: 90%;
+}   
+</style>
+</head>
+<body>
+    <h2>HTML FORM</h2>
+    <form action="">
+        <label for="firstname">FirstName :</label>
+        <input type="text" name="FirstName">
+    </form>
+    <div class="main">
+        <div class="Facebook"> facebook
+            <div class="intext">Facebook ช่วยคุณเชื่อมต่อเเละเเชร์กับ ผู้คนมากมายรอบตัวคุณ</div>
+        </div>
+        <div class="form">
+            <div class="box">
+             <form action="">
+                <label for="emailorphonenumber">  </label>
+                <input type="text" name="emailorphonenumber" placeholder="อีเมลหรือหมายเลขโทรศัพท์มือถือ">
+             </form>
+             <form action="">
+                <label for="password"></label><br>
+                <input type="text" name="password" placeholder="รหัสผ่าน">
+             </form>
+             <a href="#" class="button">เข้าสู่ระบบ</a>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Home work 2</title>
+    <style>
+        body{ padding: 0;margin: 0;height: 200vh;}
+        .big{ width: 50%; height: 50%;}
+        .small{ width: 25%;height: 25%;}
+        .inside{width: 10%; height: 10%;}
+        .absolute{ position: absolute;}
+        .relative{ position: relative;}
+        .fixed{ position: fixed;}
+        .top{ top:0}
+        .left{ left:0 }
+        .right{ right:0 }
+        .bottom{  bottom: 0 }
+        .center{ left:50%; top:50%; transform: translate(-50%,-50%);}
+        .red{ background-color: red;}
+        .green{ background-color:green;}
+        .blue{ background-color: blue;}
+        .yellow{ background-color: yellow;}
+        .pink{ background-color: pink;}
+        .white{background-color: white;}
+    </style>
+</head>
+<body>
+    <div class="small red absolute top left"></div>
+    <div class="small green absolute top right"></div>
+    <div class="small blue absolute bottom left"></div>
+    <div class="small yellow absolute bottom right"></div>
+    <div class="big fixed center">
+        <div class="inside red fixed top left"></div>
+        <div class="inside green fixed top right"></div>
+        <div class="inside blue fixed bottom left"></div>
+        <div class="inside yellow fixed bottom right"></div>
+        <div class="inside pink fixed center"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Css Flex lab</title>
+        <style>
+            * {margin: 0;padding: 0;box-sizing: border-box;}
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-start;
+                width: 80vh;
+                height: 80vh;
+                background-color: pink;
+                margin: 10vh auto;
+            }
+            .container > * {
+                background-color: lime;
+                margin: 5px;
+                padding: 20px;
+                font-size: 30px;
+                
+            }
+            .item03{
+                order: -1;
+                flex-grow: 1;
+            }
+            .item4{
+                flex-shrink: 0;
+                /* align-self: center; */
+            }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item01">01</div>
+        <div class="item02">02</div>
+        <div class="item03">03</div>
+        <div class="item04">04</div>
+        <div class="item05">05</div>
+        <div class="item06">06</div>
+        <div style="flex: 0 0 20px"></div>
+    </div>
+    
+
+</body>

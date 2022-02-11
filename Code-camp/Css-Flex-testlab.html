@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewort" content="width=device-width, initial-scale=1.0">
+    <title> Css Flex testlab</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        header{
+            background-color: rgb(226, 61, 177);
+            height: 10vh;
+        }
+        main{
+            background-color: teal;
+            height: 80vh;
+            display: flex;
+            background-image: url(https://picsum.photos/id/1015/1000);
+            
+        }
+        main > * {
+            outline: 1px dashed lime;
+            flex-grow: 1;
+            
+        }
+        .main-c{
+            flex-grow: 4;
+            text-align: center;
+            display:  flex;
+            flex-flow: column;
+            justify-content: center;
+            /* flex-flow: row wrap; */
+
+        }
+        .main-r{
+            background-color: rgb(233, 126, 215,0.5);
+
+        }
+        .main-1{
+            background-color: rgb(233, 126, 215,0.5);
+        }
+        footer{
+            background-color: rgb(226, 61, 177);
+            height: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <main>
+        <div class="main-1">Left</div>
+        <div class="main-c">
+            <h1>Title</h1>
+            <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor iure fugit voluptas eum, explicabo distinctio, velit soluta dolore laudantium, eaque deleniti assumenda ducimus reprehenderit modi!</p> -->
+        </div>
+        <div class="main-r">Right</div>
+    </main>
+    <footer>Footer</footer>
+</body>
+</html>
+    
