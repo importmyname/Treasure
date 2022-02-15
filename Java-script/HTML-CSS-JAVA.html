@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Test 3 cores of frond end</title>
+        <style>
+            h1 {
+                color: blue;
+                background-color: orange;
+                text-align: center;
+                font-size: 4rem;
+
+            }
+            body {
+                background-color: cornsilk;
+            }
+        </style>
+
+    </head>
+    <body>
+        <input id="in1" type="text" placeholder="text color">
+        <input id="in2" type="text" placeholder="Background color">
+        <button onclick="changeColor()">Change Color</button>
+        <h1 sytle="padding: 1rem ">Codecamp Thailand </h2>
+
+    </body>
+    <script>
+        // alert("hello")
+        function changeColor(){
+            // alert(*changeColor Function...*())
+            let tcolor = document.querySelector('#in1').value
+            let bcolor = document.querySelector('#in2').value
+               // alert(tcolor)
+        // alert(tcolor)
+        document.querySelector('h1').style.color = tcolor
+        document.querySelector('h1').style.backgroundcolor = bcolor
+        }
+     
+
+    </script>
+</html>
