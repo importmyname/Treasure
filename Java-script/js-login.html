@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user = prompt("Role")
+        if (user === "Admin") {
+            let admin = prompt("password")
+            if ( admin === "Codecamp10") {
+                alert("Welcome")
+            } else if ( admin === ""){
+                alert ("cancel")
+            } else if ( admin != "Codecamp10") {
+                alert ("wrong password")
+            }
+        } else if (user === "") {
+            alert("cancel")
+        } else if ( user != "Admin") {
+            alert("I don't know you")
+        } 
+    </script>
+</body>
+</html>
