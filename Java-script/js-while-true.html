@@ -8,17 +8,14 @@
 </head>
 <body>
     <script>
-        let age = prompt('How old are you ?') ;
-        let price ;
-        if (age < 18) {
-            price = 2000;
-        } else {
-            price = 3500 ;
-        }
-        alert(price)
-        
-        // let accessAllowed = (age > 18) ? true : false;
+        let sum = 0 ;
+        while(true) {
+            let v = +prompt("Enter number","")
+            if (!v) {break} // put empty = flase 
+            sum += v // sum = sum + v
 
+        }
+        console.log("sum :" + sum)
     </script>
 </body>
 </html>
