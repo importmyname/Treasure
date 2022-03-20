@@ -8,19 +8,23 @@
 </head>
 <body>
     <script>5
-        let n = prompt('N')
+        let n = +prompt('N')
         let str  = '*'
         let star = ''
-        function nstar() {
-         for ( let i = 0 ; i < n ; i++ ) {
-            star += str
-            return star;
-         }
-             
-
+        function nstar(N) {
+         return N .repeat(n)
         }
-        console.log(nstar(star))
-        let star2 = ''
+
+        function nnstar(M) {
+            for( i = 0 ; i < n ; i++){
+                return M .repeat(n)
+                
+            }
+        }
+    //   console.log(nstar(str))
+    console.log(nnstar(str))
+
+
 
     </script>
 </body>
