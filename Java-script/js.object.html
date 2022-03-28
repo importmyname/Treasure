@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // user[name = smach ]
+        // user.age = 17 ;
+        // user[house = bangkok ]
+        // user.single = true ;
+        // user.int = 9 ;
+        let user = {
+            name: "smach",
+            age: 17 ,
+            "Address" : "Bankok" ,
+            issingle: true ,
+            clever: 9 
+
+        }
+
+        let key = propmt("Enter key: ")
+        let obj = {} ;
+        
+        while (key !== "stop") {
+            let value = prompt("Enter value: ")
+            obj[key] = value ;
+            key = prompt("Enter key: ");
+
+        }
+        console.log(obj);
+    </script>
+</body>
+</html>
