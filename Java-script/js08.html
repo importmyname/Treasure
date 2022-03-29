@@ -8,15 +8,13 @@
 </head>
 <body>
     <script>
-        let obj = {}
-        obj.name = "sonter"
-        console.log(obj)
-        obj.surname = "pakron"
-        console.log(obj)
-        obj.name = "boy"
-
-        delete obj.name
-        console.log(obj)
+    //check if in obj has porperties 
+    function isEmpty(obj) {
+        for(let key in obj ) {
+            return false
+        }
+        return true
+    }
     </script>
 </body>
 </html>

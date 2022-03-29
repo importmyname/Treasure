@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(obj) {
+            let totalSalaries = 0
+            for (let key in obj ) {
+                 totalSalaries+= obj[key];
+
+            }
+            return totalSalaries ;
+        }
+    
+        let salaries = {
+            John : 100 ,
+            Ann : 160 ,
+            pete : 130 
+        }
+        console.log(sum(salaries))
+    </script>
+</body>
+</html>
