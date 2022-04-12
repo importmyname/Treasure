@@ -88,12 +88,15 @@ img {
     max-width: 100%;
     display: none;
     box-shadow: 10px 10px 20px 0 rgba(94, 47, 59, 0.2);
+    text-align: center;
+    margin-right: 50%;
 }
 
 img.active {
     display: block;
     -webkit-animation: fadeImg 0.8s;
     animation: fadeImg 0.8s ;
+    margin-right: 50%;
 
 }
 
@@ -112,7 +115,7 @@ img.active {
         opacity: 0 ;
     }
     to {
-        opacity:1;
+        opacity: 1;
     }
 }
 
@@ -121,6 +124,6 @@ img.active {
         opacity: 0 ;
     }
     to {
-        opacity:1;
+        opacity: 1;
     }
 }
